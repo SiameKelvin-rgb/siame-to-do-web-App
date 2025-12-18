@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Pro To-Do List</h1>
+
+        <!-- Input Section -->
+        <section class="input-section">
+            <input type="text" id="task-input" placeholder="Add a new task..." aria-label="Task input">
+            <select id="category-select" aria-label="Select task category">
+                <option value="General">General</option>
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+            </select>
+            <button id="add-task-btn" aria-label="Add task">Add</button>
+        </section>
+
+        <!-- Theme Toggle -->
+        <button id="toggle-theme" aria-label="Toggle Dark/Light Mode">🌙 Dark Mode</button>
+
+        <!-- Task List -->
+        <section>
+            <ul id="task-list" aria-label="List of tasks"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
